@@ -1,5 +1,5 @@
 '''Operator overloading means giving a special meaning to an operator (+, -, *, /, etc.) when it is used with objects of a class.
-
+Operator overloading means defining how an operator behaves when it is used with objects of our class.
 In simple words:
 
 We tell Python what an operator should do with our class objects.
