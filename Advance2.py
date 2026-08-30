@@ -11,7 +11,7 @@ scores: Dict[str,int]= {"Alice": 90, "Bob":85}
 
 #Union type for Variables that can hold multiple types
 identifier: Union[int,str]="ID123"
-identifier =1234 #also valid
-
+identifier =1234 #also valid 
+ 
 '''these annotations helps in making the code self-documenting and allow developer to 
 understand the data structure used at glance (look at something quickly or briefly.)'''

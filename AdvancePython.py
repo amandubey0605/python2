@@ -22,7 +22,7 @@ syntax for the variables and the -> syntax for function return types:
                             kr rha hai aur kon sa function kis type ka values or kon sa variable parameter
                               pass ho rha hai unke types kya hai  )
    def sum(a: int , b:int) -> int:
-        return a+b  
+        return a+b   
             '''
 
 
