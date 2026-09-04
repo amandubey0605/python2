@@ -11,7 +11,8 @@ n = random.randint(1, 100)
 
 guesses = 0
 
-while True:
+while True:  #So the loop keeps executing again and again indefinitely until something stops it.
+
 
     a = int(input("Guess the number: "))
 
@@ -24,6 +25,28 @@ while True:
         print("Higher number please!")
 
     else:
-        print("You guessed it!")
+        print("You guessed it! the number is : ",n)
         print("Number of guesses:", guesses)
         break
+
+'''So the loop keeps executing again and again indefinitely until something stops it.
+
+In our guessing game, this stops it:
+
+break
+
+So think of it like:
+
+while True → keep asking for guesses → break → stop when the correct number is guessed.
+
+🎯 Now answer Q2 and Q3:
+
+Q2: Why do we use:
+
+guesses += 1
+
+Q3: Why do we use:
+
+break
+
+Explain in your own words. Don't worry about grammar—we care about your logic. 💪'''    
