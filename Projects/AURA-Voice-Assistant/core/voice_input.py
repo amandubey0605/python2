@@ -1,6 +1,13 @@
 
 """
 AURA - Optimized Voice Input
+
+Features:
+- One-time microphone calibration
+- Faster command listening
+- Google speech recognition
+- Recognition and listening time measurements
+- Error handling
 """
 
 import speech_recognition as sr
@@ -13,7 +20,7 @@ class VoiceInput:
 
         self.recognizer = sr.Recognizer()
 
-        # Tune microphone recognition
+        # Microphone recognition settings
         self.recognizer.pause_threshold = 0.6
         self.recognizer.non_speaking_duration = 0.4
         self.recognizer.dynamic_energy_threshold = True
@@ -29,7 +36,7 @@ class VoiceInput:
 
                 print("\nAURA is listening...")
 
-                # Calibrate only during the first listening session
+                # First-time microphone calibration
                 if not self.is_calibrated:
 
                     print("Calibrating microphone...")
@@ -43,10 +50,11 @@ class VoiceInput:
 
                 start_time = time.perf_counter()
 
+                # Optimized listening settings
                 audio = self.recognizer.listen(
                     source,
-                    timeout=4,
-                    phrase_time_limit=6
+                    timeout=3,
+                    phrase_time_limit=5
                 )
 
             print("Recognizing...")
